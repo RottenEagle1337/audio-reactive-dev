@@ -44,11 +44,9 @@ Packages/com.rotteneagle.audioreactive/        ← package v1.0.0-preview.1, nam
 
 Assets/
 ├── Editor/SampleDevTools.cs    menu Audio Reactive/Dev: Unlock / Lock Samples, Import All Samples (test)
-├── Editor/ReadmeCapture.cs     Capture README Frames: Camera.main → PNG frames (Temp/ReadmeCapture);
-│                               CaptureWindow("InspectorWindow", path): screenshot of an editor window
 ├── Scenes/SampleScene.unity    demo: /Audio/{Low, High, Spectrum}, Sphere, Directional Light, Audio VFX
 ├── VFX/AudioReactiveDemo.vfx   demo graph (exposed AudioLevel -> spawn rate, SpectrumTexture, SpectrumSize)
-├── Settings/                   URP assets
+├── Settings/                   URP assets (one quality level: PC)
 └── InputSystem_Actions.inputactions   Input System template asset (not used by code)
 ```
 
@@ -104,9 +102,7 @@ Three GitHub repositories owned by `RottenEagle1337`:
 - **Self-contained groups.** Each group has its own materials and no references to other groups. URP.
 - **"As a user" check:** Lock → `SampleDevTools.ImportAll()` → scenes in
   `Assets/Samples/Audio Reactive/<version>/` → Play test → delete `Assets/Samples`.
-- **VFX graphs.** The sample graphs were built programmatically through the internal VFX API: a temporary
-  assembly with the friend name `Unity.Testing.VisualEffectGraph.Editor`, since removed. They can now be edited
-  in the VFX Graph editor.
+- **VFX graphs** are edited in the VFX Graph editor like any other asset.
 
 ## Architecture: layers and data flow
 

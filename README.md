@@ -32,8 +32,7 @@ Already cloned without `--recursive`: `git submodule update --init`.
   - **Unlock Samples**: `Samples~` → `Samples`, so the samples can be edited in place (GUIDs kept);
   - **Lock Samples**: back to `Samples~`; do this before committing;
   - **Import All Samples (test)**: imports every sample exactly as a user would, into `Assets/Samples`
-    (delete that folder afterwards);
-  - **Capture README Frames**: renders Camera.main to PNG frames in `Temp/ReadmeCapture` for the README GIFs.
+    (delete that folder afterwards).
 - EditMode tests: *Window > General > Test Runner*, assembly `AudioReactive.Editor.Tests`.
 
 ## Working on the native plugin
