@@ -1,0 +1,6 @@
+[submodule "Packages/com.rotteneagle.audioreactive"]
+	path = Packages/com.rotteneagle.audioreactive
+	url = https://github.com/RottenEagle1337/audio-reactive.git
+[submodule "Native"]
+	path = Native
+	url = https://github.com/RottenEagle1337/audio-reactive-native.git
